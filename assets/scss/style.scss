@@ -128,18 +128,19 @@ $nav-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 }
 .card {
   width: 18rem;
+  height: 100%;
 }
 .nav_fixed {
   position: fixed;
   width: 100%;
-  top: -1px;
+  top: 0;
   left: 0;
   right: 0;
   background: $nav-bg;
   box-shadow: $nav-shadow;
   z-index: 999;
   transition: all 0.5s ease;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 h2 {
   font-size: 34px;
@@ -377,7 +378,7 @@ a {
 .post {
   .container {
     .row.mt-5 {
-      .col-md-4 {
+      .col-lg-4 {
         @include card;
         .card {
           border: 1px solid $card-border;
@@ -462,7 +463,7 @@ a {
   .post {
     .container {
       .row {
-        .col-md-4 {
+        .col-lg-4 {
           .card {
             margin: 0 auto;
           }

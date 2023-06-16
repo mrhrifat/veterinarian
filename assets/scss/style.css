@@ -62,19 +62,20 @@
 
 .card {
   width: 18rem;
+  height: 100%;
 }
 
 .nav_fixed {
   position: fixed;
   width: 100%;
-  top: -1px;
+  top: 0;
   left: 0;
   right: 0;
   background: #c5a11e;
   box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
   z-index: 999;
   transition: all 0.5s ease;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 h2 {
@@ -318,39 +319,39 @@ a:hover {
   font-size: 20px;
 }
 
-.post .container .row.mt-5 .col-md-4 .card {
+.post .container .row.mt-5 .col-lg-4 .card {
   color: #fff;
   text-align: center;
   border: none;
 }
-.post .container .row.mt-5 .col-md-4 .card img {
+.post .container .row.mt-5 .col-lg-4 .card img {
   width: 300px;
   height: 300px;
   padding: 10px;
 }
-.post .container .row.mt-5 .col-md-4 .card .card-body {
+.post .container .row.mt-5 .col-lg-4 .card .card-body {
   background: #fdd035;
 }
-.post .container .row.mt-5 .col-md-4 .card .card-body h4 {
+.post .container .row.mt-5 .col-lg-4 .card .card-body h4 {
   font-weight: 500;
 }
-.post .container .row.mt-5 .col-md-4 .card {
+.post .container .row.mt-5 .col-lg-4 .card {
   border: 1px solid #e3e3e3;
 }
-.post .container .row.mt-5 .col-md-4 .card .card-body {
+.post .container .row.mt-5 .col-lg-4 .card .card-body {
   background: none;
   color: #000;
   text-align: left;
 }
-.post .container .row.mt-5 .col-md-4 .card .card-body h5 {
+.post .container .row.mt-5 .col-lg-4 .card .card-body h5 {
   font-weight: 700;
   font-size: 16px;
 }
-.post .container .row.mt-5 .col-md-4 .card .card-body small,
-.post .container .row.mt-5 .col-md-4 .card .card-body a {
+.post .container .row.mt-5 .col-lg-4 .card .card-body small,
+.post .container .row.mt-5 .col-lg-4 .card .card-body a {
   color: #28b0d6;
 }
-.post .container .row.mt-5 .col-md-4 .card .card-body p {
+.post .container .row.mt-5 .col-lg-4 .card .card-body p {
   margin: 5px 0;
 }
 
@@ -392,10 +393,10 @@ a:hover {
 }
 
 @media (max-width: 767px) {
-  .service .container .row .col-md-4 .card,
-  .buy-now .container .row .col-md-4 .card,
-  .team .container .row .col-md-4 .card,
-  .post .container .row .col-md-4 .card {
+  .service .container .row .col-lg-4 .card,
+  .buy-now .container .row .col-lg-4 .card,
+  .team .container .row .col-lg-4 .card,
+  .post .container .row .col-lg-4 .card {
     margin: 0 auto;
   }
   .count {

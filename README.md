@@ -5,15 +5,13 @@
         <br/> with HTML, SASS & JS
 </div>
 
-
-
 ## Development
 
 Want to run in your local development machine?
 
 - Clone repositories
 - Open with VS Code or Any Code Editor
-- Run the application with `index.html` 
+- Run the application with `index.html`
 
 ```
 git clone https://github.com/mrhrifat/veterinarian.git

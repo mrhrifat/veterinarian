@@ -1,0 +1,497 @@
+/**
+* Title: style
+* Description:
+* Filename: style.scss
+* Path: /assets/scss/style.scss
+* Author: Mrh Rifat (Programmer)
+* Date: Jun 16, 2023
+*
+*/
+
+/*===== Variable Section =====*/
+$white: #fff;
+$black: #000;
+$nav-bg: #c5a11e;
+$primary: #fdd035;
+$secondary: #28b0d6;
+$footer-bg: #393939;
+$card-border: #e3e3e3;
+$box-shadow: rgba(0, 0, 0, 0.15) -30px 32px 1px;
+$box-shadow2: rgba(0, 0, 0, 0.15) 32px 32px 1px;
+$overlay: rgba(179, 141, 10, 0.6);
+$p-font: "Abel", sans-serif;
+$head-font: "Dosis", sans-serif;
+
+.about,
+.service,
+.about2,
+.buy-now,
+.contact,
+.team,
+.count,
+.post,
+.footer {
+  padding: 90px 0;
+}
+
+// Mixin Section
+@mixin card {
+  .card {
+    color: $white;
+    text-align: center;
+    border: none;
+    img {
+      width: 300px;
+      height: 300px;
+      padding: 10px;
+    }
+    .card-body {
+      background: $primary;
+
+      h4 {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@mixin about-video {
+  .video {
+    background-image: url("../img/01.jpg");
+    background-size: 100% 100%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+
+    .overlay {
+      box-shadow: $box-shadow;
+      background: $overlay;
+      height: 100%;
+
+      .video-playback {
+        position: relative;
+        transform: translate(35%, 300%);
+
+        a {
+          svg {
+            font-size: 30px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+/*===== Global Section =====*/
+.btn {
+  padding: 7px 20px;
+  color: $white;
+  font-family: $p-font;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-contained {
+  background: $secondary;
+  &:hover {
+    background: transparent;
+    border: 1px solid $white;
+  }
+}
+
+.btn-outlined {
+  background: transparent;
+  border: 1px solid $white;
+
+  &:hover {
+    background: $white;
+    color: $black;
+  }
+}
+
+.btn-standard {
+  background: $primary;
+
+  &:hover {
+    border: 1px solid $primary;
+  }
+}
+
+.form-control:focus {
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+.card {
+  width: 18rem;
+}
+h2 {
+  font-size: 34px;
+  margin-bottom: 2px;
+}
+h2,
+h3,
+h4,
+h5 {
+  font-family: $head-font;
+}
+p {
+  font-family: $p-font;
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Header Section
+.header {
+  background-color: $primary;
+  height: 700px;
+  min-height: 100%;
+  position: relative;
+
+  .navbar {
+    .navbar-brand {
+      img {
+        width: 45%;
+        filter: brightness(0) invert(1);
+      }
+      span {
+        font-family: $head-font;
+        color: $white;
+
+        strong {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .collapse.navbar-collapse {
+      ul {
+        li {
+          margin: 0 5px;
+          a {
+            color: $white;
+            font-size: 18px;
+            font-family: $p-font;
+
+            &:hover {
+              color: $footer-bg;
+            }
+
+            &.active {
+              color: $footer-bg;
+            }
+          }
+        }
+      }
+    }
+
+    .input-group {
+      svg {
+        align-self: center;
+        background: $secondary;
+        padding: 10px;
+        color: $white;
+        border-radius: 0 5px 5px 0;
+        border: 1px solid $secondary;
+        margin-left: -10px !important;
+      }
+    }
+  }
+
+  .container.content {
+    .row {
+      .content-body {
+        position: absolute;
+        color: $white;
+        line-height: 20px;
+        transform: translateY(115px);
+
+        h2 {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+// About Section
+.about {
+  .container {
+    .row {
+      .about-video {
+        @include about-video;
+      }
+    }
+  }
+}
+
+// Service Section
+.service {
+  background: $primary;
+  .container {
+    color: $white;
+
+    .row.mt-5 {
+      .col-md-4 {
+        @include card;
+      }
+    }
+  }
+}
+
+// About To
+
+.about2 {
+  .container {
+    .row {
+      .about-video {
+        @include about-video;
+        .video {
+          .overlay {
+            box-shadow: $box-shadow2;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Buy Now Section
+.buy-now {
+  background: $primary;
+
+  .container {
+    color: $white;
+
+    .row.mt-5 {
+      @include card;
+      .card {
+        .card-body {
+          h4 {
+            font-weight: 500;
+            margin: 0;
+          }
+          button {
+            border-radius: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Team Section
+.team {
+  .container {
+    .row.mt-5 {
+      .col-md-4 {
+        @include card;
+        .card {
+          .card-body {
+            background: $white;
+            color: $black;
+            h4 {
+              font-weight: 700;
+            }
+            p {
+              margin: 0;
+            }
+            .social-icons {
+              margin: 10px 50px;
+              svg {
+                font-size: 20px;
+                color: $nav-bg;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Count Section
+.count {
+  background: url("../img/doctor.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  min-height: 400px;
+
+  .overlay {
+    background: $overlay;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .container {
+      .row {
+        .col-md-4 {
+          color: $white;
+          transform: translateY(100px);
+          .icons {
+            text-align: center;
+            svg {
+              font-size: 50px;
+            }
+            h4 {
+              color: $white;
+              margin: 15px 0;
+              font-size: 25px;
+            }
+            h5 {
+              color: $white;
+              font-weight: 700;
+              margin: 10px 0;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Post Section
+.post {
+  .container {
+    .row.mt-5 {
+      .col-md-4 {
+        @include card;
+        .card {
+          border: 1px solid $card-border;
+          .card-body {
+            background: none;
+            color: $black;
+            text-align: left;
+            h5 {
+              font-weight: 700;
+              font-size: 16px;
+            }
+            small,
+            a {
+              color: $secondary;
+            }
+            p {
+              margin: 5px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Footer Section
+.footer {
+  background: $footer-bg;
+  .container {
+    .row {
+      .col-md-4 {
+        h3 {
+          color: $white;
+          padding: 2px;
+          margin-bottom: 5px;
+          font-weight: 700;
+        }
+        nav {
+          a {
+            color: $white;
+            padding: 2px;
+          }
+        }
+
+        .input-group {
+          input {
+            background: $primary;
+          }
+          svg {
+            align-self: center;
+            background: $secondary;
+            padding: 10px;
+            color: $white;
+            border-radius: 0 5px 5px 0;
+            border: 1px solid $secondary;
+            margin-left: -10px !important;
+          }
+        }
+
+        .social-icons {
+          margin: 10px 0px;
+          svg {
+            background: $white;
+            padding: 8px;
+            font-size: 20px;
+            color: $black;
+            border-radius: 25px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query
+
+@media (max-width: 767px) {
+  .service,
+  .buy-now,
+  .team,
+  .post {
+    .container {
+      .row {
+        .col-md-4 {
+          .card {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  .count {
+    min-height: 650px;
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    .navbar {
+      .container {
+        .input-group {
+          display: none;
+        }
+      }
+    }
+  }
+  .about .container .row .about-video .video .overlay .video-playback,
+  .about2 .container .row .about-video .video .overlay .video-playback {
+    position: relative;
+    transform: translate(20%, 300%);
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    .navbar {
+      .container {
+        .navbar-brand {
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .about .container .row .about-video .video .overlay .video-playback,
+  .about2 .container .row .about-video .video .overlay .video-playback {
+    position: relative;
+    transform: translate(10%, 300%);
+  }
+}

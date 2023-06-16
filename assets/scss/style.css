@@ -1,0 +1,411 @@
+/**
+* Title: style
+* Description:
+* Filename: style.scss
+* Path: /assets/scss/style.scss
+* Author: Mrh Rifat (Programmer)
+* Date: Jun 16, 2023
+*
+*/
+/*===== Variable Section =====*/
+.about,
+.service,
+.about2,
+.buy-now,
+.contact,
+.team,
+.count,
+.post,
+.footer {
+  padding: 90px 0;
+}
+
+/*===== Global Section =====*/
+.btn {
+  padding: 7px 20px;
+  color: #fff;
+  font-family: "Abel", sans-serif;
+}
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-contained {
+  background: #28b0d6;
+}
+.btn-contained:hover {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+.btn-outlined {
+  background: transparent;
+  border: 1px solid #fff;
+}
+.btn-outlined:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn-standard {
+  background: #fdd035;
+}
+.btn-standard:hover {
+  border: 1px solid #fdd035;
+}
+
+.form-control:focus {
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.card {
+  width: 18rem;
+}
+
+h2 {
+  font-size: 34px;
+  margin-bottom: 2px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Dosis", sans-serif;
+}
+
+p {
+  font-family: "Abel", sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #fdd035;
+  height: 700px;
+  min-height: 100%;
+  position: relative;
+}
+.header .navbar .navbar-brand img {
+  width: 45%;
+  filter: brightness(0) invert(1);
+}
+.header .navbar .navbar-brand span {
+  font-family: "Dosis", sans-serif;
+  color: #fff;
+}
+.header .navbar .navbar-brand span strong {
+  font-weight: 700;
+}
+.header .navbar .collapse.navbar-collapse ul li {
+  margin: 0 5px;
+}
+.header .navbar .collapse.navbar-collapse ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Abel", sans-serif;
+}
+.header .navbar .collapse.navbar-collapse ul li a:hover {
+  color: #393939;
+}
+.header .navbar .collapse.navbar-collapse ul li a.active {
+  color: #393939;
+}
+.header .navbar .input-group svg {
+  align-self: center;
+  background: #28b0d6;
+  padding: 10px;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #28b0d6;
+  margin-left: -10px !important;
+}
+.header .container.content .row .content-body {
+  position: absolute;
+  color: #fff;
+  line-height: 20px;
+  transform: translateY(115px);
+}
+.header .container.content .row .content-body h2 {
+  color: #fff;
+}
+
+.about .container .row .about-video .video {
+  background-image: url("../img/01.jpg");
+  background-size: 100% 100%;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+.about .container .row .about-video .video .overlay {
+  box-shadow: rgba(0, 0, 0, 0.15) -30px 32px 1px;
+  background: rgba(179, 141, 10, 0.6);
+  height: 100%;
+}
+.about .container .row .about-video .video .overlay .video-playback {
+  position: relative;
+  transform: translate(35%, 300%);
+}
+.about .container .row .about-video .video .overlay .video-playback a svg {
+  font-size: 30px;
+  color: #fff;
+}
+
+.service {
+  background: #fdd035;
+}
+.service .container {
+  color: #fff;
+}
+.service .container .row.mt-5 .col-md-4 .card {
+  color: #fff;
+  text-align: center;
+  border: none;
+}
+.service .container .row.mt-5 .col-md-4 .card img {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+.service .container .row.mt-5 .col-md-4 .card .card-body {
+  background: #fdd035;
+}
+.service .container .row.mt-5 .col-md-4 .card .card-body h4 {
+  font-weight: 500;
+}
+
+.about2 .container .row .about-video .video {
+  background-image: url("../img/01.jpg");
+  background-size: 100% 100%;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+.about2 .container .row .about-video .video .overlay {
+  box-shadow: rgba(0, 0, 0, 0.15) -30px 32px 1px;
+  background: rgba(179, 141, 10, 0.6);
+  height: 100%;
+}
+.about2 .container .row .about-video .video .overlay .video-playback {
+  position: relative;
+  transform: translate(35%, 300%);
+}
+.about2 .container .row .about-video .video .overlay .video-playback a svg {
+  font-size: 30px;
+  color: #fff;
+}
+.about2 .container .row .about-video .video .overlay {
+  box-shadow: rgba(0, 0, 0, 0.15) 32px 32px 1px;
+}
+
+.buy-now {
+  background: #fdd035;
+}
+.buy-now .container {
+  color: #fff;
+}
+.buy-now .container .row.mt-5 .card {
+  color: #fff;
+  text-align: center;
+  border: none;
+}
+.buy-now .container .row.mt-5 .card img {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+.buy-now .container .row.mt-5 .card .card-body {
+  background: #fdd035;
+}
+.buy-now .container .row.mt-5 .card .card-body h4 {
+  font-weight: 500;
+}
+.buy-now .container .row.mt-5 .card .card-body h4 {
+  font-weight: 500;
+  margin: 0;
+}
+.buy-now .container .row.mt-5 .card .card-body button {
+  border-radius: 25px;
+}
+
+.team .container .row.mt-5 .col-md-4 .card {
+  color: #fff;
+  text-align: center;
+  border: none;
+}
+.team .container .row.mt-5 .col-md-4 .card img {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+.team .container .row.mt-5 .col-md-4 .card .card-body {
+  background: #fdd035;
+}
+.team .container .row.mt-5 .col-md-4 .card .card-body h4 {
+  font-weight: 500;
+}
+.team .container .row.mt-5 .col-md-4 .card .card-body {
+  background: #fff;
+  color: #000;
+}
+.team .container .row.mt-5 .col-md-4 .card .card-body h4 {
+  font-weight: 700;
+}
+.team .container .row.mt-5 .col-md-4 .card .card-body p {
+  margin: 0;
+}
+.team .container .row.mt-5 .col-md-4 .card .card-body .social-icons {
+  margin: 10px 50px;
+}
+.team .container .row.mt-5 .col-md-4 .card .card-body .social-icons svg {
+  font-size: 20px;
+  color: #c5a11e;
+}
+
+.count {
+  background: url("../img/doctor.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  min-height: 400px;
+}
+.count .overlay {
+  background: rgba(179, 141, 10, 0.6);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.count .overlay .container .row .col-md-4 {
+  color: #fff;
+  transform: translateY(100px);
+}
+.count .overlay .container .row .col-md-4 .icons {
+  text-align: center;
+}
+.count .overlay .container .row .col-md-4 .icons svg {
+  font-size: 50px;
+}
+.count .overlay .container .row .col-md-4 .icons h4 {
+  color: #fff;
+  margin: 15px 0;
+  font-size: 25px;
+}
+.count .overlay .container .row .col-md-4 .icons h5 {
+  color: #fff;
+  font-weight: 700;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.post .container .row.mt-5 .col-md-4 .card {
+  color: #fff;
+  text-align: center;
+  border: none;
+}
+.post .container .row.mt-5 .col-md-4 .card img {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+.post .container .row.mt-5 .col-md-4 .card .card-body {
+  background: #fdd035;
+}
+.post .container .row.mt-5 .col-md-4 .card .card-body h4 {
+  font-weight: 500;
+}
+.post .container .row.mt-5 .col-md-4 .card {
+  border: 1px solid #e3e3e3;
+}
+.post .container .row.mt-5 .col-md-4 .card .card-body {
+  background: none;
+  color: #000;
+  text-align: left;
+}
+.post .container .row.mt-5 .col-md-4 .card .card-body h5 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.post .container .row.mt-5 .col-md-4 .card .card-body small,
+.post .container .row.mt-5 .col-md-4 .card .card-body a {
+  color: #28b0d6;
+}
+.post .container .row.mt-5 .col-md-4 .card .card-body p {
+  margin: 5px 0;
+}
+
+.footer {
+  background: #393939;
+}
+.footer .container .row .col-md-4 h3 {
+  color: #fff;
+  padding: 2px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.footer .container .row .col-md-4 nav a {
+  color: #fff;
+  padding: 2px;
+}
+.footer .container .row .col-md-4 .input-group input {
+  background: #fdd035;
+}
+.footer .container .row .col-md-4 .input-group svg {
+  align-self: center;
+  background: #28b0d6;
+  padding: 10px;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #28b0d6;
+  margin-left: -10px !important;
+}
+.footer .container .row .col-md-4 .social-icons {
+  margin: 10px 0px;
+}
+.footer .container .row .col-md-4 .social-icons svg {
+  background: #fff;
+  padding: 8px;
+  font-size: 20px;
+  color: #000;
+  border-radius: 25px;
+  margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+  .service .container .row .col-md-4 .card,
+  .buy-now .container .row .col-md-4 .card,
+  .team .container .row .col-md-4 .card,
+  .post .container .row .col-md-4 .card {
+    margin: 0 auto;
+  }
+  .count {
+    min-height: 650px;
+  }
+}
+@media (max-width: 575px) {
+  .header .navbar .container .input-group {
+    display: none;
+  }
+  .about .container .row .about-video .video .overlay .video-playback,
+  .about2 .container .row .about-video .video .overlay .video-playback {
+    position: relative;
+    transform: translate(20%, 300%);
+  }
+}
+@media (max-width: 400px) {
+  .header .navbar .container .navbar-brand img {
+    display: none;
+  }
+  .about .container .row .about-video .video .overlay .video-playback,
+  .about2 .container .row .about-video .video .overlay .video-playback {
+    position: relative;
+    transform: translate(10%, 300%);
+  }
+}/*# sourceMappingURL=style.css.map */

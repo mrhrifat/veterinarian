@@ -64,6 +64,19 @@
   width: 18rem;
 }
 
+.nav_fixed {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background: #cf1e24;
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  z-index: 999;
+  transition: all 0.5s ease;
+  padding: 0 1rem;
+}
+
 h2 {
   font-size: 34px;
   margin-bottom: 2px;
@@ -86,7 +99,7 @@ a:hover {
 
 .header {
   background-color: #fdd035;
-  height: 700px;
+  height: 800px;
   min-height: 100%;
   position: relative;
 }
@@ -265,7 +278,7 @@ a:hover {
 }
 .team .container .row.mt-5 .col-md-4 .card .card-body .social-icons svg {
   font-size: 20px;
-  color: #c5a11e;
+  color: #cf1e24;
 }
 
 .count {

@@ -21,6 +21,8 @@ $box-shadow2: rgba(0, 0, 0, 0.15) 32px 32px 1px;
 $overlay: rgba(179, 141, 10, 0.6);
 $p-font: "Abel", sans-serif;
 $head-font: "Dosis", sans-serif;
+$nav-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+$nav-bg: #cf1e24;
 
 .about,
 .service,
@@ -128,6 +130,18 @@ $head-font: "Dosis", sans-serif;
 .card {
   width: 18rem;
 }
+.nav_fixed {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background: $nav-bg;
+  box-shadow: $nav-shadow;
+  z-index: 999;
+  transition: all 0.5s ease;
+  padding: 0 1rem;
+}
 h2 {
   font-size: 34px;
   margin-bottom: 2px;
@@ -150,7 +164,7 @@ a {
 // Header Section
 .header {
   background-color: $primary;
-  height: 700px;
+  height: 800px;
   min-height: 100%;
   position: relative;
 

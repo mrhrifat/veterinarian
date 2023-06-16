@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="./assets/scss/style.css" />
+    <title>Veterinarian</title>
+  </head>
+  <body>
+    <!-- Header Section Start-->
+    <header class="header" id="header">
+      <!-- Navigation Section Start-->
+      <nav class="navbar navbar-expand-lg navbar-light main" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <img src="./assets/img/logo.png" class="img-fluid" alt="Logo" />
+            <span> <strong>Veterinarian</strong> </span>
+          </a>
+
+          <!-- Navbar Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navBar"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navBar"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#page-top">
+                  Home
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about"> About </a>
+              </li>
+              <span></span>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#services">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a class="nav-link js-scroll-trigger" href="#contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="input-group justify-content-end w-25" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- Navigation Section End -->
+
+      <!-- Content Section -->
+      <div class="container content wow bounceInUp">
+        <div class="row">
+          <!-- Main Content -->
+          <div class="col-md-4 col-sm-6 content-body">
+            <h2>
+              First I want to be <br />
+              a Veterinarian
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Commodi optio vitae ut esse inventore nihil eligendi consequatur!
+            </p>
+
+            <div>
+              <button class="btn btn-contained">Contact Us</button>
+              <button class="btn btn-outlined">Our Service</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <!-- About Main Content -->
+        <div class="row">
+          <div class="col-md-6 col-12 align-self-center my-5 my-md-0">
+            <h2>
+              First I want to be <br />
+              a Veterinarian
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Commodi optio vitae ut esse inventore nihil eligendi consequatur!
+            </p>
+
+            <button class="btn btn-standard">Our Service</button>
+          </div>
+          <div class="col-md-6 col-12 about-video">
+            <div class="video">
+              <div class="overlay">
+                <div uk-lightbox class="video-playback">
+                  <a
+                    class="uk-button"
+                    href="https://www.youtube.com/watch?v=c2pz2mlSfXA"
+                    data-attrs="width: 1080; height: 620"
+                  >
+                    <i class="far fa-play-circle 5"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Service Section -->
+    <section class="service" id="service">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="heading">
+              <h2 class="text-white">About Us</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/ >
+                Optio similique, numquam quia voluptas debitis laudantium saepe
+                sapiente.
+              </p>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/img/01.jpg" class="card-img-top" alt="1" />
+              <div class="card-body">
+                <h4 class="card-title">Veterinarian</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/ >
+                  Optio similique, numquam quia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-5 my-md-0">
+            <div class="card">
+              <img src="./assets/img/02.jpg" class="card-img-top" alt="1" />
+              <div class="card-body">
+                <h4 class="card-title">Vaccination Care</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/ >
+                  Optio similique, numquam quia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/img/03.jpg" class="card-img-top" alt="1" />
+              <div class="card-body">
+                <h4 class="card-title">Dental Care</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/ >
+                  Optio similique, numquam quia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About 2 Section -->
+    <section class="about2" id="about2">
+      <div class="container">
+        <!-- About Main Content -->
+        <div class="row">
+          <div class="col-md-6 col-12 about-video">
+            <div class="video">
+              <div class="overlay">
+                <div uk-lightbox class="video-playback">
+                  <a
+                    class="uk-button"
+                    href="https://www.youtube.com/watch?v=c2pz2mlSfXA"
+                    data-attrs="width: 1080; height: 620"
+                  >
+                    <i class="far fa-play-circle 5"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 align-self-center text-end my-5 my-md-0">
+            <h2>
+              First I want to be <br />
+              a Veterinarian
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Commodi optio vitae ut esse inventore nihil eligendi consequatur!
+            </p>
+
+            <button class="btn btn-standard">Our Service</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buy Now Section -->
+    <section class="buy-now" id="buy-now">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="heading">
+              <h1 class="text-white">Title Here</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/ >
+                Optio similique, numquam quia voluptas debitis laudantium saepe
+                sapiente.
+              </p>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/img/01.jpg" class="card-img-top" alt="1" />
+              <div class="card-body">
+                <div class="d-flex flex-row justify-content-around my-2">
+                  <h4 class="card-title"><del>$234</del></h4>
+                  <h4 class="card-title">$195</h4>
+                </div>
+                <button class="btn btn-contained">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/img/02.jpg" class="card-img-top" alt="1" />
+              <div class="card-body">
+                <div class="d-flex flex-row justify-content-around my-2">
+                  <h4 class="card-title"><del>$234</del></h4>
+                  <h4 class="card-title">$195</h4>
+                </div>
+                <button class="btn btn-contained">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-5 my-md-0">
+            <div class="card">
+              <img src="./assets/img/03.jpg" class="card-img-top" alt="1" />
+              <div class="card-body">
+                <div class="d-flex flex-row justify-content-around my-2">
+                  <h4 class="card-title"><del>$234</del></h4>
+                  <h4 class="card-title">$195</h4>
+                </div>
+                <button class="btn btn-contained">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Service Section -->
+    <section class="team" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="heading">
+              <h1>The Vetcare Team</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/ >
+                Optio similique, numquam quia voluptas debitis laudantium saepe
+                sapiente.
+              </p>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/img/01.jpg" class="card-img-top" alt="1" />
+              <div class="card-body">
+                <h4 class="card-title">Jennifer Mullen</h4>
+                <p>Veterinary</p>
+                <div
+                  class="d-flex flex-row justify-content-around social-icons"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-5 my-md-0">
+            <div class="card">
+              <img src="./assets/img/02.jpg" class="card-img-top" alt="1" />
+              <div class="card-body">
+                <h4 class="card-title">Sheeren Collins</h4>
+                <p>Administration</p>
+                <div
+                  class="d-flex flex-row justify-content-around social-icons"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/img/03.jpg" class="card-img-top" alt="1" />
+              <div class="card-body">
+                <h4 class="card-title">Jennifer Mullen</h4>
+                <p>Veterinary</p>
+                <div
+                  class="d-flex flex-row justify-content-around social-icons"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Service Section -->
+    <section class="count" id="count">
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="icons">
+                <i class="fa-solid fa-heart-circle-plus"></i>
+                <h4>3422+</h4>
+                <h5>Happy Clients</h5>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="icons">
+                <i class="fa-solid fa-stethoscope"></i>
+                <h4>3422+</h4>
+                <h5>Happy Clients</h5>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="icons">
+                <i class="fa-solid fa-syringe"></i>
+                <h4>3422+</h4>
+                <h5>Happy Clients</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Post Section -->
+    <section class="post" id="post">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="heading">
+              <h1 class="fw-bold">Recent Post</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/ >
+                Optio similique, numquam quia voluptas debitis laudantium saepe
+                sapiente.
+              </p>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/img/01.jpg" class="card-img-top" alt="1" />
+              <div class="card-body">
+                <h5 class="card-title">As a veterinarian & lover of animals</h5>
+                <small>FEBRUARY 02, 2023</small>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/ >
+                  Optio similique, numquam..
+                </p>
+                <a href="#">Read More+</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-5 my-md-0">
+            <div class="card">
+              <img src="./assets/img/02.jpg" class="card-img-top" alt="1" />
+              <div class="card-body">
+                <h5 class="card-title">As a veterinarian & lover of animals</h5>
+                <small>FEBRUARY 02, 2023</small>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/ >
+                  Optio similique, numquam..
+                </p>
+                <a href="#">Read More+</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/img/03.jpg" class="card-img-top" alt="1" />
+              <div class="card-body">
+                <h5 class="card-title">As a veterinarian & lover of animals</h5>
+                <small>FEBRUARY 02, 2023</small>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/ >
+                  Optio similique, numquam..
+                </p>
+                <a href="#">Read More+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>About</h3>
+            <nav class="nav flex-column">
+              <a class="nav-link" href="#">History</a>
+              <a class="nav-link" href="#">Our Team</a>
+              <a class="nav-link" href="#">Brand Guidlines</a>
+              <a class="nav-link" href="#">Terms & Condtions</a>
+              <a class="nav-link" href="#">Privacy Policy</a>
+            </nav>
+          </div>
+          <div class="col-md-4">
+            <h3>Services</h3>
+            <nav class="nav flex-column">
+              <a class="nav-link" href="#">How to Order</a>
+              <a class="nav-link" href="#">Our Products</a>
+              <a class="nav-link" href="#">Order Status</a>
+              <a class="nav-link" href="#">Promo</a>
+              <a class="nav-link" href="#">Payment Method</a>
+            </nav>
+          </div>
+          <div class="col-md-4 text-end">
+            <div>
+              <h3>Title Here</h3>
+              <p class="text-white">Lorem ipsum available, but the majorit</p>
+            </div>
+            <div class="input-group justify-content-end" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                aria-label="Search"
+              />
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <div class="d-flex flex-row justify-content-end social-icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script Section -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/js/uikit-icons.min.js"></script>
+    <script src="./assets/js/scrolling.js"></script>
+  </body>
+</html>
